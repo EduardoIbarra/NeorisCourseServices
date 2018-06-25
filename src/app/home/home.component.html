@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let user of usersComponent; let i = index" routerLink="/user/{{i}}">
+    {{i}} {{user.name}}, {{user.age}}
+  </li>
+</ul>
