@@ -1,2 +1,25 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<h2>Ejercicio de Firebase</h2>
+<ul>
+  <li>Instalar librería de AngularFire2 en el proyecto de Messenger</li>
+  <li>Crear un servicio para manejar los usuarios usando firebase</li>
+  <li>Agregar un componente de Registro al proyecto con por lo menos los siguientes datos:</li>
+    <ul>
+      <li>name</li>
+      <li>nick</li>
+      <li>subnick</li>
+      <li>email</li>
+      <li>status</li>
+      <li>avatar</li>
+    </ul>
+  <li>La lista del componente Home debe de cargarse con los usuarios de Firebase</li>
+</ul>
+<hr />
+<ul>
+  <li (click)="printUser(u.user_id)" *ngFor="let u of users">
+    {{u.name}} {{u.status}}
+    <span (click)="removeUser(u.user_id)">x</span>
+  </li>
+</ul>
+<button (click)="addUser()">Agregar Usuario</button>
+<button (click)="editUser()">Editar Usuario</button>
 <router-outlet></router-outlet>

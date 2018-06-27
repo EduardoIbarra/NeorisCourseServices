@@ -1,3 +1,17 @@
+<h2>Servicios</h2>
+<ol>
+  <li>Crear el servicio usando el comando <b>ng generate service nombreServicio</b></li>
+  <li>En cada componente donde quiera usarse, inyectarlo en su constructor de la siguiente forma: <b>public nombreServicio: NombreServicio</b></li>
+  <li>Declarar la fuente de datos (un arreglo) en el servicio</li>
+  <li>Definir métodos (funciones) en el servicio para acceder a la fuente de datos</li>
+  <li>Acceder a esos métodos en los componentes a través del servicio inyectado: <b>this.nombreServicio.nombreMetodo()</b> </li>
+</ol>
+<h2>Para proyecto:</h2>
+<ul>
+  <li>Implementar un servicio para ayudar a la navegación</li>
+</ul>
+
+<hr />
 <ul>
   <li *ngFor="let user of usersComponent; let i = index" routerLink="/user/{{i}}">
     {{i}} {{user.name}}, {{user.age}}
